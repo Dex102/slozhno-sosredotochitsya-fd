@@ -192,4 +192,121 @@
   line-height: 83%;
 }
 
+@media (min-width: 768px) {
+
+  .header {
+    min-height: 1024px;
+    align-items: center;
+  }
+
+  .header__rec {
+    top: 20px;
+    right: 30px;
+  }
+
+  .decorated-zone::after {
+    top: 20px;
+    right: 20px;
+  }
+
+  .decorated-zone::before {
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .header__title {
+    margin-left: 0;
+  }
+
+  .header__theme-menu {
+    margin-right: 10px;
+    margin-top: 105px;
+  }
+
+  .cover_description {
+    width: 364px;
+    justify-self: end;
+    align-self: start;
+    margin-right: 20px;
+    margin-top: 41px;
+  }
+
+  .section__why {
+    grid-template-columns: 1fr 2fr;
+    margin: 60px 20px 80px;
+  }
+
+  .section__why-title {
+    grid-row: 1 / span 2;
+  }
+
+  .section__what {
+    gap: 20px;
+    margin: 80px 20px;
+  }
+
+  .section__what-title {
+    max-width: 236px;
+  }
+
+  .section__how {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 80px 20px;
+  }
+
+  .section__how-title {
+    grid-row: 1 / span 6;
+  }
+
+  .section__gallery {
+    margin: 80px 20px 60px;
+  }
+
+  .section__gallery-title {
+    margin-bottom: 20px;
+  }
+
+  .gallery__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "zakat zakat bear"
+    "caset coffee bear"
+    "caset street street";
+    gap: 20px;
+  }
+
+  .gallery__image_zakat {
+    grid-area: zakat;
+  }
+
+  .gallery__image_bear {
+    grid-area: bear;
+  }
+
+  .gallery__image_audiocaset {
+    grid-area: caset;
+  }
+
+  .gallery__image_cup {
+    grid-area: coffee;
+  }
+
+  .gallery__image_anime-street {
+    grid-area: street;
+  }
+
+  .footer {
+    min-height: 1024px;
+  }
+}
+
 
