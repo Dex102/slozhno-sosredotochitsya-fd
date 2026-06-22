@@ -68,18 +68,18 @@
 .header__theme-menu {
   justify-self: end;
   align-self: center;
-  margin-top: 39px;
+  margin-top: 70px;
 }
 
 .header__theme-menu-list {
-  display: grid;
-  gap: 7px;
-  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .header__theme-menu-button {
   border: 1px solid transparent;
-  color: var(--accent-color);
+  color: var(--button-color);
   font-size: var(--font-size);
   background-color: transparent;
   cursor: pointer;
@@ -89,12 +89,12 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--button-color);
   outline: none;
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid #FF007066;
+  border: 1px solid var(--border-color);
 }
 
 .header__title {
@@ -102,7 +102,7 @@
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   color: var(--title-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--title-shadow-color);
   line-height: 83%;
   margin: 60px 10px 55px 10px;
 }
@@ -122,7 +122,7 @@
 .section__title {
   font-family: var(--font-family);
   font-weight: 700;
-  color: var(--accent-color);
+  color: var(--section-title);
   font-size: var(--font-size);
   line-height: 23.4px;
 }
@@ -220,7 +220,7 @@
 
   .header__theme-menu {
     margin-right: 10px;
-    margin-top: 105px;
+    margin-top: 140px;
   }
 
   .cover_description {
@@ -250,7 +250,6 @@
   }
 
   .section__how {
-    display: grid;
     grid-template-columns: 1fr 2fr;
     margin: 80px 20px;
   }
@@ -306,6 +305,66 @@
 
   .footer {
     min-height: 1024px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    min-height: 768px;
+  }
+
+  .header__title {
+    font-size: clamp(7.25rem, 5.77rem + 6.32vw, 9.8125rem);
+  }
+
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+    margin-top: 17px;
+    margin-right: 0;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .header__theme-menu-button {
+    padding: 0 13px;
+  }
+
+  .cover_description {
+    width: 491px;
+    margin-top: 50px;
+  }
+
+  .section__why {
+    gap: 20px 10px;
+  }
+
+  .section__what {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .section__what-title {
+    max-width: 315px;
+  }
+
+  .section__what-article {
+    grid-row: 2 / 3;
+  }
+
+  .section__how {
+    gap: 20px 10px;
+  }
+
+  .footer {
+    min-height: 768px;
+  }
+
+  .footer__title {
+    font-size: clamp(7.25rem, 5.77rem + 6.32vw, 9.8125rem);
   }
 }
 
