@@ -32,6 +32,7 @@
   :root {
   --bg-image: url('../images/cover-image-light.png');
   --accent-color: #FF8DCB;
+  --bg-color: #FFF1F7;
   --title-color: #FFC2E6;
   --decorated-zone-color: #353430;
   --button-color: #353430;
